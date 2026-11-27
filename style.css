@@ -1769,3 +1769,110 @@ body {
   }
 }
 
+/* VEYLORA AMBASSADORS */
+
+.ambassadors-section {
+  padding: 90px 7%;
+  background: #F5F4EE;
+}
+
+.ambassadors-section .section-heading {
+  margin-bottom: 45px;
+}
+
+.ambassadors-section .section-label {
+  color: #806D9B;
+  letter-spacing: 3px;
+  font-size: 11px;
+}
+
+.ambassadors-section .section-heading h2 {
+  color: #524366;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.ambassadors-section .section-heading p {
+  color: #77716F;
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+.ambassador-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 30px 20px;
+}
+
+.ambassador-card {
+  padding: 18px 12px;
+  border-radius: 18px 18px 28px 18px;
+  transition: transform 0.3s ease;
+}
+
+.ambassador-card:nth-child(even) {
+  transform: translateY(22px) rotate(1deg);
+}
+
+.ambassador-card:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.ambassador-card:hover {
+  transform: translateY(-8px) rotate(0deg);
+}
+
+.ambassador-card .portrait-art {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto 12px;
+}
+
+.ambassador-card .profile-info {
+  text-align: center;
+}
+
+.ambassador-card .profile-info h3 {
+  color: #524366;
+  font-size: 17px;
+  margin: 8px 0;
+}
+
+/* Small variations for fictional placeholders */
+
+.portrait-amb-1 { --portrait-hair: #352B35; --portrait-skin: #B97960; }
+.portrait-amb-2 { --portrait-hair: #24252C; --portrait-skin: #A96D54; }
+.portrait-amb-3 { --portrait-hair: #4B3026; --portrait-skin: #D29B7E; }
+.portrait-amb-4 { --portrait-hair: #25202A; --portrait-skin: #9B624D; }
+.portrait-amb-5 { --portrait-hair: #392D29; --portrait-skin: #C58D70; }
+.portrait-amb-6 { --portrait-hair: #211F29; --portrait-skin: #D5A184; }
+.portrait-amb-7 { --portrait-hair: #30251F; --portrait-skin: #B87B60; }
+.portrait-amb-8 { --portrait-hair: #3A292E; --portrait-skin: #D4A087; }
+.portrait-amb-9 { --portrait-hair: #252329; --portrait-skin: #AD745D; }
+.portrait-amb-10 { --portrait-hair: #49352C; --portrait-skin: #C38A70; }
+
+@media (max-width: 900px) {
+  .ambassador-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ambassadors-section {
+    padding: 60px 5%;
+  }
+
+  .ambassador-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 12px;
+  }
+
+  .ambassador-card:nth-child(even),
+  .ambassador-card:nth-child(odd) {
+    transform: none;
+  }
+
+  .ambassador-card .portrait-art {
+    width: 115px;
+    height: 115px;
+  }
+}
