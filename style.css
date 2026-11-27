@@ -821,3 +821,343 @@ p {
     gap: 15px;
   }
 }
+
+/* =====================================
+   VEYLORA SCRAPBOOK VISUAL UPGRADE
+===================================== */
+
+/* SUBTLE PAPER TEXTURE */
+
+body {
+  background-image:
+    radial-gradient(#5243660b 0.7px, transparent 0.7px);
+  background-size: 9px 9px;
+}
+
+.story-preview,
+.journal-preview {
+  background-image:
+    radial-gradient(#5243660c 0.8px, transparent 0.8px),
+    linear-gradient(135deg, #EEE9F1, #F5F0F1);
+  background-size: 11px 11px, 100% 100%;
+}
+
+.work-preview {
+  background-image:
+    radial-gradient(#5243660b 0.8px, transparent 0.8px);
+  background-size: 10px 10px;
+}
+
+/* HERO — MAGAZINE COVER STYLE */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-copy {
+  position: relative;
+}
+
+.hero-copy::after {
+  content: "VOL. 01  ✳";
+  display: inline-block;
+  margin-top: 35px;
+  padding: 7px 13px;
+  background: var(--peach);
+  color: var(--lavender);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transform: rotate(-3deg);
+}
+
+.hero-art {
+  border-radius: 35px;
+  background:
+    radial-gradient(circle at 20% 20%, #ffffff70 0 3px, transparent 4px),
+    linear-gradient(145deg, #DCE9DF, #A8C5B1);
+  box-shadow: 12px 15px 0 #52436612;
+  isolation: isolate;
+}
+
+.hero-art::before {
+  content: "A SPACE TO BE CURIOUS";
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  background: var(--cream);
+  color: var(--lavender);
+  padding: 8px 15px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  box-shadow: 3px 4px 0 #52436615;
+}
+
+.hero-art::after {
+  content: "✳";
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  font-size: 4rem;
+  color: #ffffffb0;
+  transform: rotate(15deg);
+  z-index: -1;
+}
+
+.art-circle {
+  outline: 8px solid #ffffff75;
+  outline-offset: 7px;
+  border: 5px solid var(--cream);
+}
+
+.note-one {
+  z-index: 2;
+}
+
+.note-two {
+  z-index: 2;
+}
+
+.art-flower,
+.art-star {
+  text-shadow: 2px 3px 0 #ffffff80;
+}
+
+/* EXTRA SCRAPBOOK DETAILS */
+
+.story-preview,
+.work-preview,
+.beliefs,
+.people-preview,
+.journal-preview,
+.explore-preview,
+.involved-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+.story-preview::after {
+  content: "✳";
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  color: #BBAAD080;
+  font-size: 5rem;
+  transform: rotate(15deg);
+  pointer-events: none;
+}
+
+.beliefs::after {
+  content: "little things matter";
+  position: absolute;
+  right: 7%;
+  top: 45px;
+  color: #A8C5B1;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1rem;
+  transform: rotate(5deg);
+}
+
+.activity-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 7px 0 #52436612;
+}
+
+.activity-card::after {
+  content: "✳";
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  font-size: 2.5rem;
+  color: #52436630;
+}
+
+.activity-card:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.activity-card:nth-child(1) {
+  transform: rotate(-1deg);
+}
+
+.activity-card:nth-child(3) {
+  transform: rotate(1.5deg);
+}
+
+.activity-card:hover {
+  transform: translateY(-7px) rotate(0deg);
+}
+
+/* OUR PEOPLE — MORE PROMINENT */
+
+.people-preview {
+  background:
+    radial-gradient(#BBAAD030 1px, transparent 1px),
+    #F5F4EE;
+  background-size: 13px 13px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.people-preview::before {
+  content: "THE PEOPLE • THE IDEAS • THE COMMUNITY";
+  display: inline-block;
+  background: var(--peach);
+  color: var(--lavender);
+  padding: 8px 15px;
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  transform: rotate(-2deg);
+  margin-bottom: 25px;
+}
+
+.people-preview h2 {
+  max-width: 750px;
+  margin: auto;
+}
+
+.people-preview > p {
+  max-width: 480px;
+  margin: 20px auto 0;
+}
+
+.people-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1000px;
+  margin: 55px auto 0;
+}
+
+.people-links a {
+  min-height: 170px;
+  padding: 30px 22px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-size: 1.35rem;
+  box-shadow: 5px 7px 0 #52436615;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.people-links a::after {
+  content: "DISCOVER MORE ↗";
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.people-links a:nth-child(1) {
+  background: #E8E0EF;
+  transform: rotate(-2deg);
+}
+
+.people-links a:nth-child(2) {
+  background: #DFEAE0;
+  transform: rotate(1.5deg);
+}
+
+.people-links a:nth-child(3) {
+  background: #F2E0D8;
+  transform: rotate(-1deg);
+}
+
+.people-links a:hover {
+  transform: translateY(-9px) rotate(0deg);
+  box-shadow: 8px 12px 0 #52436618;
+  background: var(--lavender);
+  color: white;
+}
+
+/* JOURNAL STICKER */
+
+.journal-sticker {
+  border: 7px solid #ffffff80;
+  box-shadow: 8px 10px 0 #52436615;
+  position: relative;
+}
+
+.journal-sticker::after {
+  content: "READ • THINK • SHARE";
+  position: absolute;
+  bottom: -18px;
+  right: -15px;
+  background: var(--cream);
+  padding: 7px 12px;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transform: rotate(-5deg);
+}
+
+/* SECTION DECORATIONS */
+
+.explore-preview::after {
+  content: "✿";
+  position: absolute;
+  right: 7%;
+  top: 12%;
+  font-size: 5rem;
+  color: #52436630;
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+.involved-preview::after {
+  content: "LET'S CONNECT ✳";
+  position: absolute;
+  right: 5%;
+  bottom: 20px;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #52436685;
+  transform: rotate(-5deg);
+}
+
+/* MOBILE ADJUSTMENTS */
+
+@media (max-width: 900px) {
+  .people-links {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
+  .people-links a {
+    min-height: 130px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-art {
+    border-radius: 28px;
+  }
+
+  .hero-art::before {
+    font-size: 0.52rem;
+  }
+
+  .beliefs::after {
+    display: none;
+  }
+
+  .people-preview {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .people-links {
+    gap: 18px;
+  }
+}
