@@ -1484,3 +1484,288 @@ body {
   }
 }
 
+/* =====================================
+   VEYLORA - ILLUSTRATED CORE TEAM
+===================================== */
+
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+.core-grid .profile-card {
+  text-align: center;
+  padding: 18px 12px;
+  border-radius: 22px;
+  border: 1px solid rgba(82, 67, 102, 0.12);
+  box-shadow: 0 8px 22px rgba(82, 67, 102, 0.07);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  overflow: hidden;
+}
+
+.core-grid .profile-card:hover {
+  transform: translateY(-9px) rotate(-1deg);
+  box-shadow: 0 16px 30px rgba(82, 67, 102, 0.15);
+}
+
+.portrait-art {
+  width: 190px;
+  height: 190px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid rgba(255,255,255,0.8);
+  animation: portraitFloat 4s ease-in-out infinite;
+}
+
+.profile-card:nth-child(2) .portrait-art {
+  animation-delay: .5s;
+}
+
+.profile-card:nth-child(3) .portrait-art {
+  animation-delay: 1s;
+}
+
+.profile-card:nth-child(4) .portrait-art {
+  animation-delay: 1.5s;
+}
+
+@keyframes portraitFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+/* Face */
+
+.portrait-face {
+  position: absolute;
+  width: 76px;
+  height: 91px;
+  left: 50%;
+  top: 43px;
+  transform: translateX(-50%);
+  border-radius: 43% 43% 47% 47%;
+  background: #a96f50;
+  z-index: 2;
+}
+
+/* Hair */
+
+.portrait-hair {
+  position: absolute;
+  width: 100px;
+  height: 115px;
+  left: 50%;
+  top: 25px;
+  transform: translateX(-50%);
+  border-radius: 48% 48% 35% 35%;
+  background: #211b27;
+  z-index: 1;
+}
+
+.portrait-body {
+  position: absolute;
+  width: 135px;
+  height: 95px;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  border-radius: 48% 48% 0 0;
+  background: #524366;
+  z-index: 3;
+}
+
+/* Eyes */
+
+.portrait-eye {
+  position: absolute;
+  top: 37px;
+  width: 7px;
+  height: 9px;
+  background: #28202a;
+  border-radius: 50%;
+}
+
+.portrait-eye.left { left: 19px; }
+.portrait-eye.right { right: 19px; }
+
+/* Shalom - short hair */
+
+.portrait-shalom {
+  background: #BBAAD0;
+}
+
+.portrait-shalom .portrait-hair {
+  height: 85px;
+  width: 100px;
+  border-radius: 48% 48% 25% 25%;
+  background: #17151d;
+}
+
+.portrait-shalom .portrait-face {
+  background: #995d48;
+}
+
+.portrait-shalom .portrait-body {
+  background: #315b9b;
+}
+
+/* Pinakin - curly hair and glasses */
+
+.portrait-pinakin {
+  background: #A8C5B1;
+}
+
+.portrait-pinakin .portrait-hair {
+  width: 112px;
+  height: 93px;
+  top: 25px;
+  border-radius: 45% 45% 30% 30%;
+  background: #211b1b;
+  box-shadow:
+    -9px 2px 0 -2px #211b1b,
+    9px 0 0 -2px #211b1b,
+    0 -9px 0 -2px #211b1b;
+}
+
+.portrait-pinakin .portrait-face {
+  background: #75452f;
+}
+
+.portrait-pinakin .portrait-body {
+  background: #456b56;
+}
+
+/* Glasses */
+
+.portrait-glasses {
+  position: absolute;
+  top: 32px;
+  left: 12px;
+  width: 52px;
+  height: 18px;
+  border-left: 2px solid #29232c;
+  border-right: 2px solid #29232c;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+.portrait-glasses::before,
+.portrait-glasses::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 19px;
+  height: 15px;
+  border: 2px solid #29232c;
+  border-radius: 6px;
+}
+
+.portrait-glasses::before { left: -2px; }
+.portrait-glasses::after { right: -2px; }
+
+/* Aishani - straight hair and glasses */
+
+.portrait-aishani {
+  background: #EFCFC3;
+}
+
+.portrait-aishani .portrait-hair {
+  width: 116px;
+  height: 130px;
+  top: 25px;
+  border-radius: 48% 48% 25% 25%;
+  background: #251b1c;
+}
+
+.portrait-aishani .portrait-face {
+  background: #b8795e;
+  width: 82px;
+  border-radius: 44% 44% 48% 48%;
+}
+
+.portrait-aishani .portrait-body {
+  background: #9b739f;
+}
+
+/* Dhanushree - long wavy hair */
+
+.portrait-dhanushree {
+  background: #DCE9DF;
+}
+
+.portrait-dhanushree .portrait-hair {
+  width: 140px;
+  height: 155px;
+  top: 22px;
+  border-radius: 48% 48% 35% 35%;
+  background: #30251f;
+  box-shadow:
+    -12px 30px 0 -2px #30251f,
+    12px 30px 0 -2px #30251f;
+}
+
+.portrait-dhanushree .portrait-face {
+  background: #bd896e;
+  width: 79px;
+}
+
+.portrait-dhanushree .portrait-body {
+  background: #e8e5df;
+}
+
+/* Profile text */
+
+.core-grid .profile-info {
+  position: relative;
+  z-index: 4;
+}
+
+.core-grid .profile-role {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #806c91;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.core-grid .profile-info h3 {
+  font-size: 17px;
+  color: #524366;
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .core-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .core-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .portrait-art {
+    width: 135px;
+    height: 135px;
+  }
+
+  .core-grid .profile-card {
+    padding: 12px 7px;
+  }
+
+  .core-grid .profile-info h3 {
+    font-size: 14px;
+  }
+}
+
