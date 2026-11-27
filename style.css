@@ -2425,3 +2425,122 @@ body {
   }
 }
 
+/* VEYLORA JOURNAL — INDIVIDUAL ARTICLE PAGES */
+
+.article-header {
+  background: #f5f4ee;
+  padding: 75px 10%;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #dedbd2;
+}
+
+.article-header > a {
+  display: inline-block;
+  color: #524366;
+  text-decoration: none;
+  margin-bottom: 45px;
+  font-size: 14px;
+}
+
+.article-header > p:first-of-type {
+  color: #7da693;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.article-header h1 {
+  color: #123c2f;
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 5vw, 58px);
+  max-width: 850px;
+  margin: 25px auto;
+  line-height: 1.15;
+}
+
+.article-subtitle {
+  max-width: 650px;
+  margin: auto;
+  color: #6b6864;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.article-content {
+  max-width: 760px;
+  margin: 65px auto;
+  padding: 0 25px;
+  color: #393936;
+  font-size: 17px;
+  line-height: 1.95;
+}
+
+.article-content h2 {
+  color: #524366;
+  font-family: Georgia, serif;
+  font-size: 29px;
+  margin-top: 55px;
+  margin-bottom: 15px;
+}
+
+.article-content h3 {
+  color: #2c7359;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.article-opening {
+  color: #524366;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.article-content li {
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+
+.article-reflection {
+  background: #d8eae1;
+  padding: 30px;
+  border-radius: 18px;
+  margin: 55px 0;
+  border-left: 5px solid #7da693;
+}
+
+.article-reflection h3 {
+  color: #123c2f;
+  margin-top: 0;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.article-reflection p {
+  margin-bottom: 0;
+}
+
+.article-signoff {
+  text-align: center;
+  color: #524366;
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .article-header {
+    padding: 50px 7%;
+  }
+
+  .article-content {
+    margin: 40px auto;
+    font-size: 16px;
+  }
+
+  .article-content h2 {
+    font-size: 25px;
+  }
+}
