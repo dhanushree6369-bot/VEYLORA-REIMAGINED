@@ -1161,3 +1161,326 @@ body {
     gap: 18px;
   }
 }
+
+/* =====================================
+   OUR PEOPLE PAGE
+===================================== */
+
+.people-hero {
+  background: #EEE9F1;
+  text-align: center;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.people-hero h1 {
+  margin-bottom: 20px;
+}
+
+.people-hero > p {
+  max-width: 550px;
+  color: #706873;
+}
+
+.people-hero-decoration {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+  color: var(--lavender);
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.people-hero-decoration span:first-child,
+.people-hero-decoration span:last-child {
+  font-size: 2rem;
+}
+
+.team-section {
+  background: var(--cream);
+}
+
+.team-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 45px;
+}
+
+.team-heading > p {
+  max-width: 380px;
+  color: #706873;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.profile-card {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 6px 8px 0 #52436612;
+  transition: transform 0.3s;
+}
+
+.profile-card:nth-child(1) {
+  transform: rotate(-1.5deg);
+}
+
+.profile-card:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.profile-card:nth-child(3) {
+  transform: rotate(-0.5deg);
+}
+
+.profile-card:hover {
+  transform: translateY(-8px) rotate(0deg);
+}
+
+.profile-lavender {
+  background: #E8E0EF;
+}
+
+.profile-green {
+  background: #DFEAE0;
+}
+
+.profile-peach {
+  background: #F2E0D8;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.photo-placeholder {
+  background:
+    radial-gradient(#52436616 1px, transparent 1px),
+    #F8F5F0;
+  background-size: 12px 12px;
+  color: var(--lavender);
+}
+
+.photo-placeholder span {
+  font-size: 3.5rem;
+}
+
+.photo-placeholder small {
+  font-size: 0.62rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.profile-info {
+  padding: 22px 12px 18px;
+}
+
+.profile-role {
+  color: var(--lavender);
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.profile-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.65rem;
+  margin: 10px 0;
+}
+
+.profile-info p {
+  color: #706873;
+  font-size: 0.87rem;
+}
+
+.profile-note {
+  text-align: center;
+  color: var(--lavender);
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.ambassador-section {
+  background:
+    radial-gradient(#52436610 1px, transparent 1px),
+    #EEE9F1;
+  background-size: 12px 12px;
+}
+
+.ambassador-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.ambassador-card {
+  background: #FFFEF9;
+  padding: 13px;
+  text-align: center;
+  box-shadow: 4px 6px 0 #52436612;
+  transition: transform 0.3s;
+}
+
+.ambassador-card:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+.ambassador-card:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+
+.ambassador-card:hover {
+  transform: translateY(-7px) rotate(0deg);
+}
+
+.ambassador-photo {
+  height: 190px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 15px;
+}
+
+.ambassador-photo span {
+  font-size: 2.8rem;
+  color: var(--lavender);
+}
+
+.ambassador-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  margin-bottom: 5px;
+}
+
+.ambassador-card p {
+  color: #827985;
+  font-size: 0.78rem;
+  margin-bottom: 10px;
+}
+
+.faculty-section {
+  background: var(--sage);
+}
+
+.faculty-note {
+  background: #FFFEF9;
+  max-width: 780px;
+  margin: auto;
+  padding: 55px;
+  text-align: center;
+  box-shadow: 8px 10px 0 #52436612;
+  position: relative;
+  transform: rotate(0.5deg);
+}
+
+.faculty-symbol {
+  display: block;
+  color: var(--lavender);
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.faculty-note h2 {
+  margin-bottom: 20px;
+}
+
+.faculty-note > p:not(.eyebrow) {
+  color: #706873;
+  max-width: 570px;
+  margin: auto;
+}
+
+.faculty-placeholder {
+  margin: 35px auto 20px;
+  max-width: 250px;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(#52436616 1px, transparent 1px),
+    #EEE9F1;
+  background-size: 12px 12px;
+  color: var(--lavender);
+  font-size: 0.78rem;
+  border: 1px dashed #BBAAD0;
+}
+
+.faculty-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: var(--lavender) !important;
+}
+
+.faculty-caption {
+  display: block;
+  margin-top: 5px;
+  color: #827985;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+}
+
+/* OUR PEOPLE — RESPONSIVE */
+
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ambassador-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .people-hero {
+    min-height: 390px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+    max-width: 430px;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .ambassador-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .profile-photo {
+    height: 260px;
+  }
+
+  .ambassador-photo {
+    height: 145px;
+  }
+
+  .faculty-note {
+    padding: 35px 22px;
+  }
+}
+
