@@ -1876,3 +1876,163 @@ body {
     height: 115px;
   }
 }
+/* VEYLORA FACULTY ADVISOR */
+
+.faculty-section {
+  padding: 100px 9%;
+  background: #EAE3F0;
+}
+
+.faculty-label {
+  color: #524366;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 45px;
+  font-weight: 700;
+}
+
+.faculty-feature {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.faculty-portrait {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+
+.faculty-halo {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: #BBAAD0;
+  border: 10px solid #F5F4EE;
+  position: relative;
+  overflow: hidden;
+}
+
+.faculty-hair {
+  position: absolute;
+  width: 150px;
+  height: 185px;
+  background: #382B31;
+  border-radius: 75px 75px 35px 35px;
+  left: 50%;
+  top: 25px;
+  transform: translateX(-50%);
+}
+
+.faculty-face {
+  position: absolute;
+  width: 105px;
+  height: 135px;
+  background: #C58D70;
+  border-radius: 48% 48% 45% 45%;
+  left: 50%;
+  top: 65px;
+  transform: translateX(-50%);
+}
+
+.faculty-eye {
+  position: absolute;
+  top: 57px;
+  width: 7px;
+  height: 7px;
+  background: #34252A;
+  border-radius: 50%;
+}
+
+.faculty-eye.left { left: 27px; }
+.faculty-eye.right { right: 27px; }
+
+.faculty-body {
+  position: absolute;
+  width: 190px;
+  height: 100px;
+  background: #7DA693;
+  border-radius: 100px 100px 0 0;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.faculty-sticker {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background: #F5F4EE;
+  color: #524366;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 12px;
+  transform: rotate(-5deg);
+}
+
+.faculty-copy {
+  color: #524366;
+}
+
+.faculty-role {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.faculty-copy h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(35px, 5vw, 55px);
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.faculty-copy h2 em {
+  color: #806D9B;
+  font-weight: 400;
+}
+
+.faculty-copy h3 {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  margin: 25px 0 12px;
+}
+
+.faculty-copy p {
+  color: #706879;
+  line-height: 1.9;
+  max-width: 430px;
+}
+
+.faculty-signoff {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #806D9B;
+}
+
+@media (max-width: 700px) {
+  .faculty-section {
+    padding: 65px 7%;
+  }
+
+  .faculty-feature {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .faculty-portrait {
+    min-height: 290px;
+  }
+
+  .faculty-halo {
+    width: 230px;
+    height: 230px;
+  }
+}
