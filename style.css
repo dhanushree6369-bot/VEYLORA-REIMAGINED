@@ -2544,3 +2544,20 @@ body {
     font-size: 25px;
   }
 }
+/* CLICKABLE JOURNAL ARTICLE CARDS */
+
+a.article-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.article-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease;
+}
+
+a.article-card h3 {
+  color: #123c2f;
+}
